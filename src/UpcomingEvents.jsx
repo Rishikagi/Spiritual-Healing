@@ -1,5 +1,5 @@
 import './App.css';
-
+import date from './assets/date.svg'
 import locations from './assets/location.svg'
 import community from './assets/community.svg';
 import cal from './assets/cal.svg';
@@ -30,6 +30,7 @@ export default function UpcomingEvents(){
                      ].map(({title, desc,image,location}, i) => (
                        <div key={i} className="col-md-4 mb-3">
                          <div className="card text-left" style={{width: "20rem"}}>
+                           
                            <img src={image}class="card-img-top " alt="..."/>
                            <div className="card-body blog-body text-start" >
                              <div className='card-title'>
@@ -47,7 +48,7 @@ export default function UpcomingEvents(){
                 
                            
                          </div>
-                         <a href="#" className="btn card-btn btn-link text-start">Listen Now</a>
+                         <button className="btn all-articles btn-secondary mt-3">Register</button>
                              
                            </div>
                            

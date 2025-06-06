@@ -170,6 +170,9 @@ h5{
 .serv-nav{
   padding: 0 5px 0 5px;
 }
+.serv-body{
+  background-color: white;
+}
 
 /* events */
 .location{
@@ -180,5 +183,5 @@ h5{
 .loc-text{
   font-size: 10px;
   padding: 5px;
-  
+
 }

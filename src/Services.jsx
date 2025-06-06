@@ -30,7 +30,7 @@ export default function Services(){
               <div key={i} className="col-md-4 mb-3">
                 <div className="card text-left" style={{width: "20rem"}}>
                   <img src={image}class="card-img-top " alt="..."/>
-                  <div className="card-body blog-body text-start" >
+                  <div className="card-body serv-body text-start" >
                     <div className='card-title'>
                         <h6 className=''>{title}</h6>
 
