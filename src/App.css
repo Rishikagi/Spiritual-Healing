@@ -1,0 +1,184 @@
+/* In your CSS file */
+.spiritual-bg {
+  background-color: #F8F0E3;
+  min-height: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sanctuary-heading {
+  color: #4a5568;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.first{
+  width: 70%;
+ 
+}
+.button-sec{
+  padding: 10px  !important;
+  margin: 20px  !important;
+  gap: 20px  !important;
+}
+.btn-explore{
+  background-color: #4a5568 !important;
+  color: white !important;
+  margin-right: 2rem;
+}
+.head-content{
+  text-wrap: wrap;
+   color: #4a5568;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: flex;
+
+}
+
+.nav-link{
+  color: black !important;
+}
+.nav-head{
+  display: inline;
+}
+.navbar{
+  display: inline;
+   background-color: #F8F0E3;
+   border-radius: 5px;
+   margin: 0 5px 2px 5px;
+}
+
+/* About Section */
+.about-head{
+  color: #6D597A;
+}
+
+.short-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px; 
+}
+
+.short-underline::after {
+  content: '';
+  position: absolute;
+  left: 50%;                       
+  transform: translateX(-50%);      
+  bottom: 0;
+  width: 50%;                       
+  height: 3px;                      
+  background-color: #B56576;          
+  border-radius: 2px;              
+}
+.about-para{
+  color:#355070;
+}
+.card-vision{
+  color: #355070;
+  background-color: #F8F0E3 ;
+  text-align: left;
+  font-weight: 4px;
+  font-size: 1rem;
+}
+.our-journey{
+    color: #355070;
+ 
+  text-align: left;
+  font-weight: 4px;
+  font-size: 1rem;
+}
+.our-journey-head {
+background-color: #EAAC8B !important;
+}
+h5{
+  color: #355070 !important;
+  
+  text-align: left;
+  font-weight: 4px;
+  font-size: 1rem;
+}
+
+/* Resources section */
+
+.resources-section{
+  background-color: #F8F0E3;
+  height: fit-content;
+}
+.nav-underline{
+  color: #E5E7EB !important;
+}
+.nav-link{
+  
+  font-weight: 700;
+}
+.card-text{
+  color: #355070;
+}
+.card-title{
+  color: #355070 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.card-time{
+  color: #6B7280;
+  font-size: smaller !important;
+  font-weight: 10px !important;
+}
+.card-head{
+  margin-bottom: 10px;
+}
+.card-btn{
+  color: #B56576 !important;
+  text-decoration: none !important;
+  margin-left: 0 !important ;
+}
+.all-articles{
+  background-color: #6D597A !important;
+  color: white;
+}
+
+
+/* Blogs */
+.para-title{
+  background-color: #6D597A33;
+  color: white
+}
+.card-body{
+  display: inline;
+}
+.card-img-top{
+ border-bottom: solid #6D597A33;
+ background-color:#6D597A33;
+ height: 10rem;
+ padding: 50px;
+}
+.mindfulness{
+  border: solid 2px #6D597A33;
+  background-color: #6D597A33;
+}
+
+
+.blog-body{
+  background-color: #F8F0E3;
+}
+
+/* Our Serrvices */
+
+.services-section{
+  background-color: #F8F0E3;
+}
+.serv-nav{
+  padding: 0 5px 0 5px;
+}
+
+/* events */
+.location{
+  margin:0;
+  padding: 5px;
+
+}
+.loc-text{
+  font-size: 10px;
+  padding: 5px;
+  
+}
