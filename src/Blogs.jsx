@@ -9,7 +9,7 @@ export default function Blogs(){
 </div><br/>
 <div className=' d-flex justify-content-md-start justify-content-center'>
 <div className="card " style={{width: "25rem"}}>
-  <img src={code}class="card-img-top small-image" alt="..."/>
+  <img src={code}className="card-img-top small-image" alt="..."/>
   <div className="card-body blog-body" >
     
    <div className="card-text  d-flex justify-content-between">

@@ -31,7 +31,7 @@ export default function Services(){
             ].map(({title, desc,image}, i) => (
               <div key={i} className="col-md-4 mb-3  d-flex justify-content-md-start justify-content-center">
                 <div className="card text-left" style={{width: "20rem"}}>
-                  <img src={image}class="card-img-top " alt="..."/>
+                  <img src={image}className="card-img-top " alt="..."/>
                   <div className="card-body serv-body text-start" >
                     <div className='card-title'>
                         <h6 className=''>{title}</h6>
