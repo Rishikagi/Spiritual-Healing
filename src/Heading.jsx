@@ -25,8 +25,16 @@ const Heading = () => {
 
     {/* Right Column */}
     <div className="col-md-6 text-center">
-      {/* Replace with actual image tag */}
-      <img src={main} alt="Sanctuary" className="img-fluid" />
+    
+      <div className="position-relative text-white">
+        <img src={main} alt="Background" className=" img-fluid" />
+
+        {/* Top-right overlay */}
+        <div className="overlay-top-right head-img position-absolute text-center p-2">
+          Soul Sanctuary
+        </div>
+      </div>
+     
     </div>
   </div>
 </div>

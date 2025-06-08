@@ -3,6 +3,7 @@ import background from './assets/background.svg';
 import background1 from './assets/background1.svg';
 import background3 from './assets/background3.svg';
 import background4 from './assets/background4.svg';
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function Resources(){
     return(
@@ -36,7 +37,7 @@ export default function Resources(){
                ].map(({ image ,title, desc, time }, i) => (
               <div key={i} className="col-md-6 mb-3">
                 <div className="card card-vision">
-  <div className="card-body">
+  <div className="card-body res">
     <div className="d-flex align-items-start gap-2 mb-2">
       {/* Image on the left */}
       <img
@@ -54,7 +55,7 @@ export default function Resources(){
 
     <p className="card-text">{desc}</p>
 
-    <a href="#" className="btn card-btn btn-link">Read Article</a>
+    <a href="#" className="btn card-btn btn-link">Read Article <FaArrowRight /></a>
   </div>
 </div>
 

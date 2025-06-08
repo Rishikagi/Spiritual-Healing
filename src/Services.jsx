@@ -2,6 +2,8 @@ import './App.css';
 import sleep from './assets/sleep.svg';
 import circle from './assets/circle.svg';
 import plus from './assets/plus.svg';
+import { FaArrowRight } from 'react-icons/fa';
+
 export default function Services(){
     return(
         <section className=" py-5">
@@ -27,7 +29,7 @@ export default function Services(){
             {title:"Chakra Balancing", desc:"A 30-minute meditation to align and balance your energy centers for optimal wellbeing.", image:plus },{title: "Sleep & Relaxation", desc:"A soothing meditation designed to help you release tension and prepare for restful sleep", image: sleep}
 
             ].map(({title, desc,image}, i) => (
-              <div key={i} className="col-md-4 mb-3">
+              <div key={i} className="col-md-4 mb-3  d-flex justify-content-md-start justify-content-center">
                 <div className="card text-left" style={{width: "20rem"}}>
                   <img src={image}class="card-img-top " alt="..."/>
                   <div className="card-body serv-body text-start" >
@@ -43,7 +45,7 @@ export default function Services(){
        
                   
                 </div>
-                <a href="#" className="btn card-btn btn-link text-start">Listen Now</a>
+                <a href="#" className="btn card-btn btn-link text-start">Listen Now <FaArrowRight /></a>
                     
                   </div>
                   

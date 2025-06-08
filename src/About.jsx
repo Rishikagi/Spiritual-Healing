@@ -36,7 +36,7 @@ journey with grace and clarity.</p>
                 { title: "Our Community", desc: "A supportive network of like-minded individuals committed to personal growth and spiritual awakening.",image: community }
               ].map((item, i) => (
                 <div key={i} className="col-sm-6 mb-3">
-                  <div className="p-3 card-vision border rounded">
+                  <div className="p-3 card-vision border rounded ">
                     <span> 
                       <img src={item.image} alt="image" className="img-fluid mb-2" style={{ height: "30px" }} />
                     <h6>{item.title}</h6></span>

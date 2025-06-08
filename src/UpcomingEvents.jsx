@@ -28,10 +28,19 @@ export default function UpcomingEvents(){
                      {title:"Healing Circle Workshop", desc:"A weekend workshop focused on community healing and support through shared practices.", image:community, location:"Serenity Center, 456 Tranquil Avenue" },{title: "Tarot & Intuition Workshop", desc:"Learn to connect with your intuition and develop your tarot reading skills.", image: lock ,location:"Mystic Bookshop, 789 Wisdom Street"}
          
                      ].map(({title, desc,image,location}, i) => (
-                       <div key={i} className="col-md-4 mb-3">
+                       <div key={i} className="col-md-4 mb-3  d-flex justify-content-md-start justify-content-center">
                          <div className="card text-left" style={{width: "20rem"}}>
+                           <div className="position-relative text-white">
+        <img src={image} alt="Background" className="card-img-top" />
+
+        {/* Top-right overlay */}
+        <div className="overlay-top-right position-absolute text-end p-2">
+          June 15, 2023
+        </div>
+      </div>
+ 
                            
-                           <img src={image}class="card-img-top " alt="..."/>
+                           
                            <div className="card-body blog-body text-start" >
                              <div className='card-title'>
                                  <h6 className=''>{title}</h6>
