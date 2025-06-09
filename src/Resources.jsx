@@ -1,5 +1,5 @@
 import './App.css'
-import background2 from './assets/background.svg';
+import background2 from './assets/background2.svg';
 import background1 from './assets/background1.svg';
 import background3 from './assets/background3.svg';
 import background4 from './assets/background4.svg';
