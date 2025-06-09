@@ -1,5 +1,5 @@
 import './App.css'
-import background from './assets/background.svg';
+import background2 from './assets/background.svg';
 import background1 from './assets/background1.svg';
 import background3 from './assets/background3.svg';
 import background4 from './assets/background4.svg';
@@ -31,7 +31,7 @@ export default function Resources(){
 
 
 
-                { title: "Understanding Your Chakras", desc: "A comprehensive guide to the seven main chakras and how to balance them for optimal wellbeing" ,  time: "April 22, 2023 • 12 min  read", image: background},
+                { title: "Understanding Your Chakras", desc: "A comprehensive guide to the seven main chakras and how to balance them for optimal wellbeing" ,  time: "April 22, 2023 • 12 min  read", image: background2},
                 { title: "The Healing Power of Nature", desc: "Discover how connecting with nature can enhance your spiritual practice and promote healing",  time: "March 10, 2023 • 10 min read" ,image: background3},
                 { title: "Tarot for Beginners", desc: "A beginner's guide to understanding tarot cards and how to use them for personal guidance.",  time: "February 5, 2023 • 15 min read",image: background4 }
                ].map(({ image ,title, desc, time }, i) => (
