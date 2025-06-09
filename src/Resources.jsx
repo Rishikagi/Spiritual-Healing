@@ -1,8 +1,8 @@
 import './App.css'
-import background2 from './assets/background2.svg';
-import background1 from './assets/background1.svg';
-import background3 from './assets/background3.svg';
-import background4 from './assets/background4.svg';
+import background2 from './assets/Background2.svg';
+import background1 from './assets/Background1.svg';
+import background3 from './assets/Background3.svg';
+import background4 from './assets/Background4.svg';
 import { FaArrowRight } from 'react-icons/fa';
 
 export default function Resources(){
