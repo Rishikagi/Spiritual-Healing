@@ -19,7 +19,7 @@
   color: #6D597A !important;
 }
 .res{
-  background-color: #F8F0E3;
+  background-color: #f8f0e3e7;
   height:fit-content;
   padding: 1.5rem;
   
@@ -116,6 +116,85 @@
   transform: scale(1.03);
 }
 
+
+/* Rating section */
+
+.exp-title{
+  color:#6D597A;
+  font-weight: 1px;
+  font-size: 5rem;
+}
+.exp-text{
+  color:#6D597A;
+  font-weight: 5px;
+  font-size: 1.4rem;
+  
+}
+.exp-card{
+  box-shadow: 20px black;
+  padding: 5px;
+}
+/* Centering and card sizing */
+.exp-card {
+  width: 100%;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.exp-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+
+
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .exp-title {
+    font-size: 1.5rem;
+  }
+
+  .exp-text {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* InnerPeace section */
+.testimonial-card {
+  background:#f8f0e3e7;
+  border-radius: 0 0 50% 50% / 0 0 30% 30%;
+  padding: 3rem 1rem 3.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+  min-height: 300px;
+  width: 350px;
+  color: #355070;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 40 40px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card img {
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.testimonial-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #355070;
+}
+.testi{
+  background-color: white;
+}
 
 
 
