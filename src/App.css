@@ -1,73 +1,3 @@
-/* In your CSS file */
-.spiritual-bg {
-  background-color: #F8F0E3;
-  min-height: 10rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.sanctuary-heading {
-  color: #4a5568;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.first{
-  width: 70%;
- 
-}
-.button-sec{
-  padding: 10px  !important;
-  margin: 20px  !important;
-  gap: 20px  !important;
-}
-.btn-explore{
-  background-color: #4a5568 !important;
-  color: white !important;
-  margin-right: 2rem;
-}
-.head-content{
-  text-wrap: wrap;
-   color: #4a5568;
-  font-weight: 300;
-  letter-spacing: 1px;
-  display: flex;
-
-}
-
-.nav-link{
-  color: #355070 !important;
- transition: transform 0.3s ease;
-}
-.nav-head{
-  display: inline;
-}
-.navbar{
-  display: inline;
-   background-color: #F8F0E3;
-   border-radius: 5px;
-   margin: 0 5px 0 0;
-   
-   box-shadow: #F8F0E3;
-   border-bottom: solid #ebd2c5 !important;
-}
-.subodh{
-  margin-left: 40%;;
-  padding: 5px;
-  color: #6D597A;
-}
-.nav-link:hover {
-  transform: translateY(-3px);
-  font-weight: bold !important;
-  text-shadow: #355070 !important;
- 
-}
-
-/* About Section */
-.about-head{
-  color: #6D597A !important;
-}
-
 .short-underline {
   position: relative;
   display: inline-block;
@@ -85,345 +15,107 @@
   background-color: #B56576;          
   border-radius: 2px;              
 }
-.about-para{
-  color:#355070;
+.head{
+  color: #6D597A !important;
 }
-.card-vision{
-  color: #355070;
-  background-color: #F8F0E3 !important ;
-  text-align: left;
-  font-weight: 4px;
-  font-size: 1rem;
-}
-.our-journey{
-    color: #355070;
- 
-  text-align: left;
-  font-weight: 4px;
-  font-size: 1rem;
-}
-.our-journey-head {
-background-color: #EAAC8B !important;
-}
-h5{
-  color: #355070 !important;
-  
-  text-align: left;
-  font-weight: 4px;
-  font-size: 1rem;
-}
-
-/* Resources section */
-
-.resources-section{
+.res{
   background-color: #F8F0E3;
-  height: fit-content;
-}
-.nav-underline{
-  color: #E5E7EB !important;
-}
-.nav-link{
+  height:fit-content;
+  padding: 1.5rem;
   
-  font-weight: 700;
 }
-.card-text{
-  color: #355070;
+.img-div{
+  margin: 1rem;
+}
+.card-body{
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0 !important;
+
+  
 }
 .card-title{
-  color: #355070 !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  font-size: 1rem;
+  font-weight: 5px;
+  color: #355070;
 }
-.card-time{
-  color: #6B7280;
-  font-size: smaller !important;
-  font-weight: 10px !important;
+.card-text{
+   font-size: 0.7rem;
+  font-weight: 2px;
+  color: #355070;
+
 }
-.card-head{
-  margin-bottom: 10px;
+.card-img-top {
+
+  object-fit: cover;
 }
-.card-btn{
-  color: #B56576 !important;
-  text-decoration: none !important;
-  margin-left: 0 !important ;
+.read{
+  color: #B56576;
 }
 .all-articles{
   background-color: #6D597A !important;
   color: white;
+  margin: 1rem;
+  border-radius: 8px !important;
 }
-
-
-/* Blogs */
-.para-title{
-  background-color: #6D597A33;
-  color: white
-}
-.card-body{
-  display: inline;
-}
-.card-img-top{
- border-bottom: solid #6D597A33;
- background-color:#6D597A33;
- height: 10rem;
- padding: 50px;
-}
-.mindfulness{
-  border: solid 2px #6D597A33;
-  background-color: #6D597A33;
-}
-
-
-.blog-body{
-  background-color: #F8F0E3;
-}
-
-/* Our Serrvices */
-
-.services-section{
-  background-color: #F8F0E3;
-}
-.serv-nav{
-  padding: 0 5px 0 5px;
-}
-.serv-body{
-  background-color: white;
-}
-
-/* events */
-.location{
-  margin:0;
-  padding: 5px;
-
-}
-.loc-text{
-  font-size: 10px;
-  padding: 5px;
-
-}
-
-/* about hover effect */
-.about-head {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #333;
-  position: relative;
-}
-
-.short-underline::after {
-  content: '';
-  width: 60px;
-  height: 4px;
-  
-  display: block;
-  margin: 0.5rem auto;
-  border-radius: 2px;
-}
-
-.about-para {
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.our-journey-head {
-  background-color: #f9f9f9;
-  border-left: 5px solid #6D597A;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.our-journey-head:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.1);
-}
-
-.our-journey {
-  font-size: 1rem;
-  color: #444;
-  text-align: left;
-  line-height: 1.6;
-}
-
-.card-vision {
-  background-color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  text-align: left;
-}
-
-.card-vision:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #6D597A
-}
-
-.card-vision h6 {
-  font-weight: 600;
-  
-  margin-bottom: 0.5rem;
-}
-
-.card-vision p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Optional image animation */
-.card-vision img {
-  transition: transform 0.3s ease;
-}
-
-.card-vision:hover img {
-  transform: scale(1.1);
-}
-
-/* services effect */
-
-
-.serv-nav .nav-link {
-  font-weight: 500;
-  transition: transform 0.2s ease;
-}
-
-.serv-nav .nav-link:hover {
-  transform: translateY(-2px);
-  text-decoration: underline;
-}
-
-.card {
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
+/* Card hover effect */
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
 }
 
-.card-img-top {
-  height: 180px;
-  object-fit: contain;
-  padding: 1rem;
+/* Image zoom on hover */
+.img-div img {
   transition: transform 0.3s ease;
 }
-
-.card:hover .card-img-top {
+.card:hover .img-div img {
   transform: scale(1.05);
 }
 
-.serv-body {
-  padding: 1.2rem;
+/* Read Article hover underline */
+.read {
+  transition: all 0.3s ease;
 }
-
-.card-title h6 {
-  font-weight: 600;
-  margin-bottom: 0.6rem;
-}
-
-.card-text p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #444;
-}
-
-.card-btn {
-  padding: 0;
-  font-weight: 500;
-  transition: text-decoration 0.2s ease, transform 0.2s ease;
-}
-
-.card-btn:hover {
+.read:hover {
   text-decoration: underline;
-  transform: translateX(2px);
+  opacity: 0.8;
 }
 
+/* Arrow hover animation */
+.read:hover svg {
+  transform: translateX(4px);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive image sizing */
+.img-div img {
+  object-fit: cover;
+  height: 180px;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Remove extra space */
+.card-body {
+  padding-bottom: 0.5rem;
+}
+.card-footer {
+  padding-top: 0.5rem;
+}
+
+/* View All Articles button hover */
 .all-articles {
-  transition: transform 0.3s ease;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
 }
-
 .all-articles:hover {
-  transform: scale(1.05);
+  opacity: 0.9;
+  transform: scale(1.03);
 }
 
 
-/* heading effects */
-.sanctuary-heading h2 {
-  font-weight: 500;
-  line-height: 1.3;
-  transition: transform 0.3s ease;
-  
-}
 
-.sanctuary-heading h2:hover {
-  transform: translateY(-3px);
-}
-
-.head-content p {
-  font-size: 1.1rem;
-  color: #444;
-  transition: color 0.3s ease;
-}
-
-.head-content p:hover {
-  color: #222;
-}
-
-.button-sec .btn {
-  border-radius: 30px;
-  padding: 0.6rem 1.5rem;
-  font-weight: 500;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.button-sec .btn-explore:hover,
-.button-sec .btn-outline-dark:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-img.img-fluid {
-  max-height: 400px;
-  transition: transform 0.4s ease;
-}
-
-img.img-fluid:hover {
-  transform: scale(1.05);
-}
- .res{
-  background-color: white !important;
- }
- .h2{
-  color: #6D597A !important; 
- }
-
-
-
- .overlay-top-right {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #B56576;
-  color: #fff;
-  padding: 2px;
-  border-radius: 30px;
-  font-size: 0.7rem;
-}
-
-.head-img{
-   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  background-color: transparent;
-  padding: 10px 20px;
- 
-  font-weight: bold;
-  font-size: 1.25rem;
-  color: #355070;
-}
 

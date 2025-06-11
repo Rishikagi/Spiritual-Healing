@@ -1,69 +1,83 @@
-import './App.css'
-import background2 from './assets/Background2.svg';
-import background1 from './assets/Background1.svg';
-import background3 from './assets/Background3.svg';
-import background4 from './assets/Background4.svg';
+import './App.css';
+import mindfulness from './assets/mindfulness.svg';
+import locations from './assets/location.svg';
+import chakra from './assets/chakra.svg';
+import tarrot from './assets/tarrot.svg';
+import overlay from './assets/overlay.svg';
 import { FaArrowRight } from 'react-icons/fa';
-
-export default function Resources(){
-    return(
-        <section className="py-5 text-center">
-        <div className="container py-5 text-center">
-          <h2 className='about-head short-underline'>Spiritual Resources</h2>
-          <p className='about-para'>Explore our collection of resources to deepen your spiritual practice and understanding.</p>
-          <div className="d-flex justify-content-center nav-underline gap-3 my-3">
-            <ul className="nav nav-underline">
- 
-     <li className="nav-item">
-    <a className="nav-link" href="#">Articles</a>
-    </li>
-    <li className="nav-item">
-    <a className="nav-link" href="#">Books</a>
-     </li>
-      <li className="nav-item">
-    <a className="nav-link" href="#">Videos</a>
-     </li>
+export default function Resources() {
+    const cards = [
+    {
+      title: 'The Power of Mindfulness',
+      desc: 'Explore how mindfulness practices can transform your daily life and enhance your spiritual awareness.',
+      img: mindfulness,
+      date: 'May 15, 2023',
+      time: '8 min read',
+    },
+    {
+      title: 'Understanding Your Chakras',
+      desc: 'A comprehensive guide to the seven main chakras and how to balance them for optimal wellbeing.',
+      img: chakra,
+      date: 'April 22, 2023',
+      time: '12 min read',
+    },
+    {
+      title: 'Tarot for Beginners',
+      desc: 'A beginner\'s guide to understanding tarot cards and how to use them for personal guidance.',
+      img: tarrot,
+      date: 'February 5, 2023',
+      time: '15 min read',
+    },
+    {
+      title: 'The Healing Power of Nature',
+      desc: 'Discover how connecting with nature can enhance your spiritual practice and promote healing.',
+      img: overlay,
+      date: 'March 10, 2023',
+      time: '10 min read',
+    },
+  ];
+  return(
     
-    </ul></div>
-          <div className="row">
-            {[
-                 { title: "The Power of Mindfulness", desc: "Explore how mindfulness practices can transform your daily life and enhance your spiritual awareness." , time: "May 15, 2023 • 8 min read", image: background1},
 
 
+    <section className="py-5 text-center res ">
+      <div className="container">
+        
+        <h2 className="mb-4 head short-underline" style={{ fontFamily: 'cursive' }}>
+          Spiritual Resources
+        </h2>
+        <div className="row">
+          {cards.map((card, idx) => (
+            <div className="col-lg-3 col-md-6 mb-4" key={idx}>
+              <div className="card h-100 shadow-sm rounded-4">
+                <div className='img-div'>
+                <img src={card.img} className="card-img-top rounded-top-4" alt="..." />
+                </div>
+                <div className="card-body text-start">
+                  <h5 className="card-title fw-bold">{card.title}</h5>
+                  <p className="card-text">{card.desc}</p>
+                </div>
+                <div className="card-footer bg-white border-0 text-start px-3 pb-3">
+                  <small className="text-muted ">
+                    <img className="location" src= {locations} alt="" />{card.date} • {card.time}
+                            
+                  </small>
+                  <br /> <br />
+                  <a href="#" className=" read text-decoration-none">
+                    Read Article  <FaArrowRight style={{ fontSize: '0.8rem', color: '#B56576' }} />
 
-                { title: "Understanding Your Chakras", desc: "A comprehensive guide to the seven main chakras and how to balance them for optimal wellbeing" ,  time: "April 22, 2023 • 12 min  read", image: background2},
-                { title: "The Healing Power of Nature", desc: "Discover how connecting with nature can enhance your spiritual practice and promote healing",  time: "March 10, 2023 • 10 min read" ,image: background3},
-                { title: "Tarot for Beginners", desc: "A beginner's guide to understanding tarot cards and how to use them for personal guidance.",  time: "February 5, 2023 • 15 min read",image: background4 }
-               ].map(({ image ,title, desc, time }, i) => (
-              <div key={i} className="col-md-6 mb-3">
-                <div className="card card-vision">
-  <div className="card-body res">
-    <div className="d-flex align-items-start gap-2 mb-2">
-      {/* Image on the left */}
-      <img
-        src={image}
-        alt=""
-        style={{ height: "40px", width: "40px", objectFit: "cover" }}
-      />
-
-      {/* Title and time on the right */}
-      <div>
-        <h6 className="card-title mb-1">{title}</h6>
-        <span className="card-time text-muted small">{time}</span>
-      </div>
-    </div>
-
-    <p className="card-text">{desc}</p>
-
-    <a href="#" className="btn card-btn btn-link">Read Article <FaArrowRight /></a>
-  </div>
-</div>
-
+                  </a>
+                </div>
               </div>
-            ))}
-          </div>
-          <button className="btn all-articles btn-secondary mt-3">View All Articles</button>
+            </div>
+          ))}
         </div>
-      </section>
-    )
+        <button className="btn all-articles btn-secondary mt-3">View All Articles</button>
+      </div>
+    </section>
+
+
+
+   
+  );
 }
