@@ -3,7 +3,7 @@ import mindfulness from './assets/mindfulness.svg';
 import locations from './assets/location.svg';
 import chakra from './assets/chakra.svg';
 import tarrot from './assets/tarrot.svg';
-import overlay from './assets/overlay.svg';
+import overlay from './assets/Overlay.svg';
 import { FaArrowRight } from 'react-icons/fa';
 export default function Resources() {
     const cards = [
