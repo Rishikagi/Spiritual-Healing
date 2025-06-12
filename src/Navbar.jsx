@@ -55,13 +55,13 @@ export default function Navbar() {
                 </li>
               ) : (
                 <li className="nav-item" key={link.name}>
-                  <a
+                  <Link
                     href={link.href}
                     className="nav-link fw-semibold"
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               )
             )}
