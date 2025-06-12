@@ -6,11 +6,11 @@ import './App.css';
 const navLinks = [
   { name: "Home", href: "/Heroslider" },
   { name: "About us", href: "/about" },
-  { name: "Services", href: "/Spiritual-Healing/experience" },
-  { name: "Events", href: "/Spiritual-Healing/Innerpeace" },       
-  { name: "Resources", href: "/Spiritual-Healing/resources" },
-  { name: "Blogs", href: "/Spiritual-Healing/blogs" },         
-  { name: "Contact", href: "/Spiritual-Healing/contact" },     
+  { name: "Services", href: "/experience" },
+  { name: "Events", href: "/innerpeace" },
+  { name: "Resources", href: "/resources" },
+  { name: "Blogs", href: "/blogs" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

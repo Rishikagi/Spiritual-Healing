@@ -14,16 +14,16 @@ function App() {
   
      
 
- <Router basename="/Spiritual-Healing">
+ <Router>
       <Navbar />
       <div className="pt-20"> {/* Navbar height offset */}
         <Routes>
-          <Route path="/Heroslider" element={<HeroSlider />} />
+          <Route path="/" element={<HeroSlider />} />
 
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/Resources" element={<Resources />} />
-          <Route path="/Experience" element={<Experience />} />
-          <Route path="/Innerpeace" element={<Innerpeace />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/innerpeace" element={<Innerpeace />} />
         </Routes>
       </div>
     </Router>
