@@ -3,33 +3,34 @@ import logo from "./images/Link.png";
 import { Link } from "react-router-dom";
 import './App.css';
 
+// Define your navigation links
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About us", href: "/about" },
-  { name: "Services", href: "/experience" },
-  { name: "Events", href: "/innerpeace" },
-  { name: "Resources", href: "/resources" },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", to: "/" },
+  { name: "About us", to: "/about" },
+  { name: "Services", to: "/experience" },
+  { name: "Events", to: "/innerpeace" },
+  { name: "Resources", to: "/resources" },
+  { name: "Blogs", to: "/blogs" },
+  { name: "Contact", to: "/contact" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar navbar-expand-md t fixed-top shadow-sm border-bottom">
+    <nav className="navbar navbar-expand-md fixed-top shadow-sm border-bottom bg-white">
       <div className="container">
         {/* Logo */}
-        <div className="navbar-brand d-flex align-items-center">
+        <Link to="/" className="navbar-brand d-flex align-items-center">
           <img
             src={logo}
             alt="Logo"
             className="rounded-circle shadow-sm"
             style={{ height: "56px", width: "56px", objectFit: "cover" }}
           />
-        </div>
+        </Link>
 
-        {/* Hamburger */}
+        {/* Hamburger Menu for Mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -39,32 +40,20 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Menu */}
+        {/* Navigation Links */}
         <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}>
           <ul className="navbar-nav ms-auto mb-2 mb-md-0">
-            {navLinks.map((link) =>
-              link.name === "About us" || link.name === "Home" ? (
-                <li className="nav-item" key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="nav-link fw-semibold"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ) : (
-                <li className="nav-item" key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="nav-link fw-semibold"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              )
-            )}
+            {navLinks.map((link) => (
+              <li className="nav-item" key={link.name}>
+                <Link
+                  to={link.to}
+                  className="nav-link fw-semibold"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
