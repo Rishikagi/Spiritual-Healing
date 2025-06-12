@@ -1,3 +1,5 @@
+
+
 .short-underline {
   position: relative;
   display: inline-block;
@@ -44,6 +46,9 @@
   font-weight: 2px;
   color: #355070;
 
+}
+.resources-section{
+  margin-top: 5rem;
 }
 .card-img-top {
 
@@ -195,6 +200,29 @@
 .testi{
   background-color: white;
 }
+
+.navbar{
+  margin-bottom: 1rem;
+  background-color:#f8f0e3e7;
+}
+
+section{
+  margin-top: 4rem;
+}
+p{
+  color: #355070; 
+}
+.ic-label{
+  color: #6D597A;
+}
+.bigimg{
+   border-top-left-radius: 50px;
+}
+.session{
+  padding: 5px !important;
+  
+}
+
 
 
 
